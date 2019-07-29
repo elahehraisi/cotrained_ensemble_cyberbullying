@@ -42,7 +42,7 @@ parser.add_argument('--lr', type=float, default=0.01,
 parser.add_argument('--epochs', type=int, default=101,
                     help='upper epoch limit')
 parser.add_argument('--batch_size', type=int, default=2,
-                    help='batch size')
+                    help='batch size. Better to be 16 or 32. I used 2 for small synthetic data.')
 parser.add_argument('--dropout', type=float, default=0.2,
                     help='dropout applied to layers (0 = no dropout) 0.2')
 parser.add_argument('--tied', action='store_true',
